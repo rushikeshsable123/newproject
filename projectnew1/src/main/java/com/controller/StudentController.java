@@ -20,7 +20,7 @@ public class StudentController {
 	{
 		Student stu =sr.save(s);
 
-		System.out.println("crud");
+		System.out.println("crud1");
 		return stu;
 		
 	}
