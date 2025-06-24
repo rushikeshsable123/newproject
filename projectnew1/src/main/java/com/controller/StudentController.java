@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.model.Student;
@@ -16,7 +17,7 @@ public class StudentController {
 	StudentService sr;
 
 	@PostMapping("/add")
-	public Student addstudent(@PathVariable Student s)
+	public Student addstudent(@RequestBody Student s)
 	{
 		Student stu =sr.save(s);
 
