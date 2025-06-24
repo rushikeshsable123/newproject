@@ -19,6 +19,8 @@ public class StudentController {
 	public Student addstudent(@PathVariable Student s)
 	{
 		Student stu =sr.save(s);
+
+		System.out.println("crud");
 		return stu;
 		
 	}
